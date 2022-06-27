@@ -9,29 +9,29 @@
 
 // Ex 2
 
-const countEach = (phrase) => {
+// const countEach = (phrase) => {
 
-  let xs = 0
-  let os = 0
+//   let xs = 0
+//   let os = 0
 
-  for(let i = 0; i < phrase.length; i++){
+//   for(let i = 0; i < phrase.length; i++){
 
-    if(phrase[i].toLowerCase() == 'x'){
-      xs += 1
-    }else{
-      os += 1
-    }
-  }
+//     if(phrase[i].toLowerCase() == 'x'){
+//       xs += 1
+//     }else{
+//       os += 1
+//     }
+//   }
 
-  if(os == xs){
-    return true
-  }else{
-    return false
-  }
-}
+//   if(os == xs){
+//     return true
+//   }else{
+//     return false
+//   }
+// }
 
-console.log(countEach("xoooxooxo"))
-console.log(countEach("xoxoxoxo"))
+// console.log(countEach("xoooxooxo"))
+// console.log(countEach("xoxoxoxo"))
 
 // Ex 3
 
@@ -66,21 +66,22 @@ console.log(countEach("xoxoxoxo"))
 
 // Ex 5
 
-// const makeItSpongeBob = (phrase) => {
+const makeItSpongeBob = (phrase) => {
 
-//   let swapped = ""
-//   for (let i=0; i<phrase.length; i++){
-//     if(i % 2 == 0 ){
-//       swapped += phrase[i].toUpperCase()
-//     }else{
-//       swapped += phrase[i].toLowerCase()
-//     }
-//   }
-//   return swapped
+// A little thing to do
 
-// }
+  let swapped = ""
+  for (let i=0; i<phrase.length; i++){
+    if(i % 2 == 0 ){
+      swapped += phrase[i].toUpperCase()
+    }else{
+      swapped += phrase[i].toLowerCase()
+    }
+  }
+  return swapped
+}
 
-// console.log(makeItSpongeBob("Javascript is easy"))
+console.log(makeItSpongeBob("Javascript is easy"))
 
 
 // Ex 6
@@ -92,3 +93,30 @@ console.log(countEach("xoxoxoxo"))
 // console.log(sortLetters("KonExio"))
 
 // Ex 7
+
+// const countEach = (phrase) => {
+
+//   let xs = 0
+//   let os = 0
+
+
+//   for(let i = 0; i < phrase.length; i++){
+
+//     if(phrase[i].toLowerCase() == 'x'){
+//       xs += 1
+//     }else if(phrase[i].toLowerCase() == 'o'){
+//       os += 1
+//     }else{
+//       return "Error! There is a letter other than \"X\" & \"O\""
+//     }
+//   }
+
+//   if(os == xs){
+//     return true
+//   }else{
+//     return false
+//   }
+// }
+
+// console.log(countEach("xoooxodoxo"))
+// console.log(countEach("xoxoxoxo"))
