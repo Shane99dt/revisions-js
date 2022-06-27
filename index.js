@@ -10,23 +10,23 @@
 // Ex 2
 
 const countEach = (phrase) => {
+
+  let xs = 0
+  let os = 0
+
   for(let i = 0; i < phrase.length; i++){
 
-    let xs = 0
-    let os = 0
-
     if(phrase[i].toLowerCase() == 'x'){
-      console.log(phrase[i].toLowerCase())
       xs += 1
     }else{
       os += 1
     }
+  }
 
-    if(os == xs){
-      return true
-    }else{
-      return false
-    }
+  if(os == xs){
+    return true
+  }else{
+    return false
   }
 }
 
